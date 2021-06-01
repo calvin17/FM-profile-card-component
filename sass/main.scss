@@ -1,0 +1,108 @@
+// COLOR VARIABLES
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+// FONT VARIABLES
+$font-primary: "Kumbh Sans", sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: $very-dark-desaturated-blue;
+  background-color: $dark-cyan;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 49vw top -88vh, left 49vw top 42vh;
+}
+
+.container {
+  min-height: calc(100vh - 20px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .profile-card {
+    //width: 375px;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    .card-bg-img {
+      img {
+        border-radius: 1rem 1rem 0rem 0rem;
+      }
+    }
+    .profile-img {
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      top: 85px;
+      left: 120px;
+
+      margin: 0 auto;
+      border: 5px solid #fff;
+    }
+    .user-info {
+      margin: 7rem 0rem 2.5rem 0rem;
+      .user-name {
+        font-weight: 700;
+      }
+      .user-age {
+        color: $dark-gray;
+      }
+      .user-location {
+        color: $dark-grayish-blue;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+        margin-top: 1rem;
+      }
+    }
+    .profile-stats {
+      border-top: 1px solid rgb(231, 226, 226);
+      padding: 2.5rem;
+      ul {
+        list-style-type: none;
+
+        display: flex;
+        justify-content: space-around;
+
+        .stats-count {
+          font-weight: 700;
+          margin-bottom: 0.8rem;
+        }
+        .stats-name {
+          font-size: 1rem;
+          color: $dark-grayish-blue;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  height: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #2d3248;
+  background-color: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 49vw top -88vh, left 49vw top 42vh; }
+
+.container {
+  min-height: calc(100vh - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .profile-card {
+    border-radius: 1.5rem;
+    background-color: #fff;
+    text-align: center;
+    position: relative; }
+    .container .profile-card .card-bg-img img {
+      border-radius: 1rem 1rem 0rem 0rem; }
+    .container .profile-card .profile-img {
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      top: 85px;
+      left: 120px;
+      margin: 0 auto;
+      border: 5px solid #fff; }
+    .container .profile-card .user-info {
+      margin: 7rem 0rem 2.5rem 0rem; }
+      .container .profile-card .user-info .user-name {
+        font-weight: 700; }
+      .container .profile-card .user-info .user-age {
+        color: #969696; }
+      .container .profile-card .user-info .user-location {
+        color: #6a6f81;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+        margin-top: 1rem; }
+    .container .profile-card .profile-stats {
+      border-top: 1px solid #e7e2e2;
+      padding: 2.5rem; }
+      .container .profile-card .profile-stats ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around; }
+        .container .profile-card .profile-stats ul .stats-count {
+          font-weight: 700;
+          margin-bottom: 0.8rem; }
+        .container .profile-card .profile-stats ul .stats-name {
+          font-size: 1rem;
+          color: #6a6f81;
+          letter-spacing: 0.1rem; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  height: 20px; }
+
+.attribution a {
+  color: #3e52a3; }
