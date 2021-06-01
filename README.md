@@ -20,7 +20,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Overview
 
-- [Live Demo](https://calvin17.github.io/FM-stats-preview-card-component-main/)
+- [Live Demo](https://calvin17.github.io/FM-profile-card-component/)
 
 ### The challenge
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://calvin17.github.io/FM-stats-preview-card-component-main/)
+- Live Site URL: [Add live site URL here](https://calvin17.github.io/FM-profile-card-component/)
 
 ## My process
 
